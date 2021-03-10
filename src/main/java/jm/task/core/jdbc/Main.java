@@ -22,7 +22,7 @@ public class Main {
         userService.saveUser("Roman", "Volchek", (byte)24);
         System.out.println("User с именем Роман добавлен");
 
-        userService.saveUser("Roman", "Volchek", (byte)24);
+        userService.saveUser("Roman", "Volchek", (byte)25);
         System.out.println("User с именем Роман добавлен");
 
         List<User> userList = userService.getAllUsers();
