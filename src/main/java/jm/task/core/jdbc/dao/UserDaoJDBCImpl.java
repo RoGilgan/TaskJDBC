@@ -69,7 +69,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
         try(Connection connection = Util.getConnection();
             Statement statement = connection.createStatement()) {
-            ResultSet resultSet = statement.executeQuery("select * from user");
+            ResultSet resultSet = statement.executeQuery("SELECT * FROM user");
 
             while (resultSet.next()) {
                 User users = new User();
