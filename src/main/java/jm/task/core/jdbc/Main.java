@@ -10,7 +10,6 @@ public class Main {
     public static void main(String[] args) {
 
         UserService userService = new UserServiceImpl();
-
         userService.createUsersTable();
 
         userService.saveUser("Roman", "Volchek", (byte) 24);
@@ -29,7 +28,6 @@ public class Main {
         userList.forEach(System.out::println);
 
         userService.cleanUsersTable();
-
         userService.dropUsersTable();
     }
 }
